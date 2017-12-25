@@ -10,11 +10,10 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "0.0.21",
-    "@fortawesome/fontawesome-free-brands": "0.0.18",
-    "@fortawesome/fontawesome-free-solid": "0.0.17",
+    "@fortawesome/fontawesome": "^1.1.0",
+    "@fortawesome/fontawesome-free-brands": "^5.0.2",
     "@fortawesome/fontawesome-pro-light": "^5.0.2",
-    "@fortawesome/react-fontawesome": "0.0.12",
+    "@fortawesome/react-fontawesome": "0.0.17",
     "gatsby": "^1.9.149",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-google-fonts": "0.0.3",
@@ -22,6 +21,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
+    "lodash.shuffle": "^4.2.0",
     "react": "^16.2.0",
     "react-images": "^0.5.13",
     "typography": "^0.16.6"

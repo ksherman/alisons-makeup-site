@@ -18,7 +18,7 @@ export default props => {
             Book Me
           </Link>
           <a
-            href="https://twitter.com/kd_sherm"
+            href="https://twitter.com/2brokebeauties"
             target="_blank"
             rel="noopener noreferrer"
             className="link-list-item"
@@ -26,7 +26,7 @@ export default props => {
             <FontAwesomeIcon className="fa-icon" icon={faTwitter} size="lg" />
           </a>
           <a
-            href="https://www.linkedin.com/in/kdsherm"
+            href="https://www.facebook.com/alison.i.sherman/media_set?set=a.10150315359482183.340195.504707182&type=3"
             target="_blank"
             rel="noopener noreferrer"
             className="link-list-item"
