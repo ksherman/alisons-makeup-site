@@ -38,17 +38,17 @@ class Homepage extends React.Component {
         <div className="filter-buttons">
           <button
             className={`category-button ${
-              galleryFilter === 'wedding' ? 'active' : null
+              galleryFilter === 'Weddings' ? 'active' : null
             }`}
-            onClick={() => this.toggleGalleryFilter('wedding')}
+            onClick={() => this.toggleGalleryFilter('Weddings')}
           >
             Weddings
           </button>
           <button
             className={`category-button ${
-              galleryFilter === 'event' ? 'active' : null
+              galleryFilter === 'Events' ? 'active' : null
             }`}
-            onClick={() => this.toggleGalleryFilter('event')}
+            onClick={() => this.toggleGalleryFilter('Events')}
           >
             Special Events
           </button>
