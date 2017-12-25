@@ -1,12 +1,18 @@
 import React from 'react';
+import _shuffle from 'lodash.shuffle';
 import { IMAGES_DATA } from '../content/images';
 
 class Homepage extends React.Component {
   state = {
     open: false,
     galleryFilter: false,
-    imagesArray: IMAGES_DATA,
+    imagesArray: [],
   };
+
+  componentDidMount() {
+    const shuffleImages = _shuffle(IMAGES_DATA);
+    this.setState({ imagesArray: shuffleImages });
+  }
 
   toggleGalleryFilter = galleryFilter => {
     this.setState({ galleryFilter });
@@ -46,11 +52,19 @@ class Homepage extends React.Component {
           </button>
           <button
             className={`category-button ${
-              galleryFilter === 'Events' ? 'active' : null
+              galleryFilter === 'Prom/Quince' ? 'active' : null
             }`}
-            onClick={() => this.toggleGalleryFilter('Events')}
+            onClick={() => this.toggleGalleryFilter('Prom/Quince')}
           >
-            Special Events
+            Prom/Quince
+          </button>
+          <button
+            className={`category-button ${
+              galleryFilter === 'Everyday' ? 'active' : null
+            }`}
+            onClick={() => this.toggleGalleryFilter('Everyday')}
+          >
+            Everyday
           </button>
           <button
             className={`category-button ${!galleryFilter ? 'active' : null}`}
