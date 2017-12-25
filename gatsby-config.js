@@ -1,14 +1,14 @@
 module.exports = {
   pathPrefix: '/kds-site-gatsby',
   siteMetadata: {
-    title: 'KDSherm',
+    title: "Alison's Makeup",
   },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/src/posts/`,
+        path: `${__dirname}/src/content`,
       },
     },
     'gatsby-transformer-remark',
