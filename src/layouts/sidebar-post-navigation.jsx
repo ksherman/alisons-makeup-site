@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faBook from '@fortawesome/fontawesome-pro-light/faBook';
+import faBook from '@fortawesome/fontawesome-free-solid/faBook';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook';
 
