@@ -35,16 +35,30 @@ class Homepage extends React.Component {
 
     return (
       <div className="homepage-wrapper">
-        <h1>A component!</h1>
-        <button onClick={() => this.toggleGalleryFilter('wedding')}>
-          Weddings
-        </button>
-        <button onClick={() => this.toggleGalleryFilter('event')}>
-          Special Events
-        </button>
-        <button onClick={() => this.toggleGalleryFilter(false)}>
-          All Images
-        </button>
+        <div className="filter-buttons">
+          <button
+            className={`category-button ${
+              galleryFilter === 'wedding' ? 'active' : null
+            }`}
+            onClick={() => this.toggleGalleryFilter('wedding')}
+          >
+            Weddings
+          </button>
+          <button
+            className={`category-button ${
+              galleryFilter === 'event' ? 'active' : null
+            }`}
+            onClick={() => this.toggleGalleryFilter('event')}
+          >
+            Special Events
+          </button>
+          <button
+            className={`category-button ${!galleryFilter ? 'active' : null}`}
+            onClick={() => this.toggleGalleryFilter(false)}
+          >
+            All Images
+          </button>
+        </div>
         <div className="image-gallery">{images}</div>
       </div>
     );

@@ -53,3 +53,29 @@ nav.navigation-wrapper {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .sidebar-primary-navigation {
+    width: 3rem;
+    border-right: 0.5rem solid $color-orchid;
+
+    .site-title {
+      left: 3rem;
+      font-size: 1.3rem;
+      padding: 0 2rem;
+    }
+
+    .link-list {
+      margin-top: 19rem;
+      font-size: 1.5rem;
+
+      .link-list-item {
+        padding: 0.5rem;
+
+        .fa-icon {
+          margin: 1.2rem 0rem;
+        }
+      }
+    }
+  }
+}

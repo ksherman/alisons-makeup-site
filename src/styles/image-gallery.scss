@@ -30,3 +30,27 @@
     }
   }
 }
+
+.filter-buttons {
+  margin-bottom: 1rem;
+}
+
+.category-button {
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: lighten($color-orchid, 30%);
+  color: white;
+
+  &.active {
+    color: white;
+    background-color: $color-orchid;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .category-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
