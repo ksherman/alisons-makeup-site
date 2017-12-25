@@ -1,7 +1,8 @@
 {
-  "name": "kds-blog",
-  "description": "Blog for KDSherm",
-  "repository": "https://github.com/ksherman/kds-site-gatsby",
+  "name": "alisons-makeup-site",
+  "version": "1.0.0",
+  "description": "Alison's Makeup Site",
+  "repository": "https://github.com/ksherman/alisons-makeup-site",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
