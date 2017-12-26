@@ -39,3 +39,20 @@ h4 {
 p, ul {
   font-size: 1.6rem;
 }
+
+a.link {
+  text-decoration: none;
+  border-bottom: 3px solid $color-orchid;
+  line-height: 1em;
+  display: inline-block;
+  padding: 0.2rem 0.4rem 0 0.4rem;
+  font-weight: bold;
+  color: darken($color-orchid, 15%);
+  transition: all 200ms;
+
+  &:hover {
+    background-color: $color-orchid;
+    color: white;
+    transition: all 200ms;
+  }
+}
