@@ -6,21 +6,22 @@ nav.navigation-wrapper {
 .sidebar-primary-navigation {
   background-color: darken($color-dark, 5%);
   border-right: 1.5rem solid $color-orchid;
-  width: 9rem;
+  width: 7rem;
 
   .site-title {
     position: absolute;
     top: 0px;
-    left: 9rem;
+    left: 7rem;
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 2rem;
-    padding: 2.7rem 2rem;
+    font-size: 1.7rem;
+    padding: 2.1rem 2rem;
     text-align: center;
     width: auto;
     transform: rotate(90deg);
     transform-origin: left top 0;
+    letter-spacing: 1px;
 
     &:hover {
       background-color: $color-orchid;
@@ -32,14 +33,14 @@ nav.navigation-wrapper {
   }
 
   .link-list {
-    margin-top: 24.3rem;
+    margin-top: 24.7rem;
     text-align: center;
     font-size: 2rem;
     border-top: 1px solid lighten($color-dark, 5%);
 
     .link-list-item {
       display: block;
-      padding: 2rem;
+      padding: 1.5rem 0.5rem;
       color: white;
       text-decoration: none;
 
@@ -48,7 +49,8 @@ nav.navigation-wrapper {
       }
 
       .fa-icon {
-        margin: 1rem;
+        margin: 0.5rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -62,7 +64,7 @@ nav.navigation-wrapper {
     .site-title {
       left: 3rem;
       font-size: 1.3rem;
-      padding: 0 2rem;
+      padding: 0.35rem 2rem;
     }
 
     .link-list {
@@ -74,6 +76,7 @@ nav.navigation-wrapper {
 
         .fa-icon {
           margin: 1.2rem 0rem;
+          font-size: 2rem;
         }
       }
     }

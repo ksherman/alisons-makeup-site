@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Didact Gothic', 'Arimo'],
+        fonts: ['Open Sans', 'Poiret One'],
       },
     },
     'gatsby-plugin-sass',

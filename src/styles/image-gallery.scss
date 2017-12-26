@@ -33,24 +33,29 @@
 
 .filter-buttons {
   margin-bottom: 0.5rem;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 
-.category-button {
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  background-color: lighten($color-orchid, 30%);
-  color: white;
-
-  &.active {
+  .category-button {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: lighten($color-orchid, 30%);
     color: white;
-    background-color: $color-orchid;
+    cursor: pointer;
+
+    &.active {
+      color: white;
+      background-color: $color-orchid;
+    }
   }
 }
 
 @media screen and (max-width: 400px) {
-  .category-button {
-    padding: 1rem;
-    font-size: 1.2rem;
+  .filter-buttons {
+    .category-button {
+      padding: 1rem;
+      font-size: 1rem;
+    }
   }
 }
